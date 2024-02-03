@@ -1,0 +1,171 @@
+html {
+  background: #f5f5f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+span:after {
+  content: " ";
+  display: inline-block;
+  width: 2%;
+}
+
+fieldset {
+  float: left;
+  padding-right: 18px;
+}
+
+#logo {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+}
+
+.window {
+  position: relative;
+  cursor: default;
+  margin: 2em auto;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.9); /* Glass-like background */
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 2em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 640px;
+}
+
+.window.white {
+  background: #fff;
+  color: #333;
+  border-color: #ddd;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.window.half-width {
+  width: 50%;
+}
+
+.window h1 {
+  text-align: center;
+}
+
+.window.blue p {
+  color: #333;
+  text-shadow: none;
+}
+
+button,
+.button,
+.button:link {
+  display: inline-block;
+  font-weight: bold;
+  color: #fff;
+  font-family: inherit;
+  font-size: 16px;
+  background: #3498db;
+  padding: 10px 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: 0.2s all ease-in;
+  border: none;
+  border-radius: 5px;
+}
+
+button.full-width,
+.button.full-width {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+button:hover,
+.button:active,
+.button:focus,
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+  background: #2980b9;
+}
+
+.button.pressed {
+  box-shadow: none;
+  background: #ccc;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background: #ccc;
+}
+
+button:first-letter,
+.button:first-letter {
+  color: #ffd700;
+}
+
+button#btn-transfer {
+  margin-top: 20px;
+}
+
+input,
+textarea {
+  background: rgba(255, 255, 255, 0.7);
+  color: #333;
+  width: 100%;
+  max-width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+input:disabled {
+  background: #f2f2f2;
+  color: #999;
+  border: 2px solid #e6e6e6;
+}
+
+.window > textarea {
+  width: 100%;
+  border: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.trade-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+div .transfer {
+  display: table;
+  margin: auto;
+}
+
+.transfer fieldset {
+  border: 0;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .window {
+    width: 90%;
+  }
+
+  .window.half-width {
+    width: 100%;
+  }
+}

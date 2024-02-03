@@ -1,19 +1,19 @@
 {
   "canisters": {
-    "noteskeeper_backend": {
-      "main": "src/noteskeeper_backend/main.mo",
+    "tokens_backend": {
+      "main": "src/tokens_backend/main.mo",
       "type": "motoko"
     },
-    "noteskeeper_frontend": {
+    "tokens_frontend": {
       "dependencies": [
-        "noteskeeper_backend"
+        "tokens_backend"
       ],
       "frontend": {
-        "entrypoint": "src/noteskeeper_frontend/src/index.html"
+        "entrypoint": "src/tokens_frontend/src/index.html"
       },
       "source": [
-        "src/noteskeeper_frontend/assets",
-        "dist/noteskeeper_frontend/"
+        "src/tokens_frontend/assets",
+        "dist/tokens_frontend/"
       ],
       "type": "assets"
     }
