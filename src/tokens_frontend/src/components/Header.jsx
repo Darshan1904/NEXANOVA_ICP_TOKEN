@@ -5,9 +5,6 @@ function Header() {
     <header>
       <div className="blue window" id="logo">
         <h1>
-          <span role="img" aria-label="tap emoji">
-            💼
-          </span>
           CrystalPay
         </h1>
       </div>

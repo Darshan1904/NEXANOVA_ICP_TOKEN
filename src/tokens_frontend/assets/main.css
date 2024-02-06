@@ -102,11 +102,6 @@ button:disabled {
   background: #ccc;
 }
 
-button:first-letter,
-.button:first-letter {
-  color: #ffd700;
-}
-
 button#btn-transfer {
   margin-top: 20px;
 }
